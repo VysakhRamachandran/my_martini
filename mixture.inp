@@ -1,0 +1,16 @@
+#
+# A mixture of peptide and RNA chains 
+#
+
+tolerance 2.0
+filetype pdb
+output packed.pdb
+
+#add TER to after each monomer chain
+add_amber_ter
+
+structure fus_cg.pdb   
+  number 10 
+  inside box 0. 0. 0. 100. 100. 200. 
+end structure
+
